@@ -43,6 +43,7 @@
 		43C0EDBC2A3991AE0040B99E /* YSTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0EDB82A3991AE0040B99E /* YSTabBarItemView.swift */; };
 		43C0EDBD2A3991AE0040B99E /* YSTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0EDB92A3991AE0040B99E /* YSTabBar.swift */; };
 		43C0EDBE2A3991AE0040B99E /* YSTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0EDBA2A3991AE0040B99E /* YSTabBarView.swift */; };
+		43C0EDC12A39A4380040B99E /* Figtree-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43C0EDC02A39A4380040B99E /* Figtree-SemiBold.ttf */; };
 		8CB7B6BD4354EFA96E96BF40 /* Pods_DashboardAPPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54909298408E96BD40A9F3F /* Pods_DashboardAPPTests.framework */; };
 		95FC5E99B3B49D364C7900B6 /* Pods_DashboardAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 565E3CCA676554B99B32539A /* Pods_DashboardAPP.framework */; };
 		BD0ED60CDC369F4548717C29 /* Pods_DashboardAPP_DashboardAPPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29A377F68E06E47AFA475B8 /* Pods_DashboardAPP_DashboardAPPUITests.framework */; };
@@ -108,6 +109,7 @@
 		43C0EDB82A3991AE0040B99E /* YSTabBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTabBarItemView.swift; sourceTree = "<group>"; };
 		43C0EDB92A3991AE0040B99E /* YSTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTabBar.swift; sourceTree = "<group>"; };
 		43C0EDBA2A3991AE0040B99E /* YSTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTabBarView.swift; sourceTree = "<group>"; };
+		43C0EDC02A39A4380040B99E /* Figtree-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Figtree-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BEC7944C798A4E59C5EF845 /* Pods-DashboardAPP-DashboardAPPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardAPP-DashboardAPPUITests.release.xcconfig"; path = "Target Support Files/Pods-DashboardAPP-DashboardAPPUITests/Pods-DashboardAPP-DashboardAPPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		565E3CCA676554B99B32539A /* Pods_DashboardAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashboardAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D35A9E73F8DDBE00E99C0D /* Pods-DashboardAPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashboardAPPTests.debug.xcconfig"; path = "Target Support Files/Pods-DashboardAPPTests/Pods-DashboardAPPTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				439A9B4D2A38A4B800829A78 /* Figtree-Regular.ttf */,
+				43C0EDC02A39A4380040B99E /* Figtree-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C0EDC12A39A4380040B99E /* Figtree-SemiBold.ttf in Resources */,
 				43478A5A2A38CADF004612F1 /* MetricCollectionViewCell.xib in Resources */,
 				439A9B672A38ADC200829A78 /* LinkTableViewCell.xib in Resources */,
 				430690F02A3852A8001E4D5B /* LaunchScreen.storyboard in Resources */,

@@ -24,7 +24,7 @@ class LinkTableViewCell: UITableViewCell {
     
     func setupFontforLabel(){
         titleLBL.setFigFontReqular(size: 14)
-        clickCountLbl.setFigFontReqular(size: 14)
+        clickCountLbl.setFigFontSemiBold(size: 14)
         
         dateLBL.setFigFontReqular(size: 12)
         clickTitle.setFigFontReqular(size: 12)

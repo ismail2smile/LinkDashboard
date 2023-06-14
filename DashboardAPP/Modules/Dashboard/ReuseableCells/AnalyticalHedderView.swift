@@ -20,6 +20,7 @@ class AnalyticalHedderView: UIView {
     @IBOutlet weak var chartDateLBL: UILabel!
     @IBOutlet weak var recentBrnLblBL: UILabel!
     @IBOutlet weak var topclickBTNLBL: UILabel!
+    @IBOutlet weak var viewAllAnalyticLBL: UILabel!
     @IBOutlet weak var topLinkBtn: UIButton!
     @IBOutlet weak var recentBtn: UIButton!
     @IBOutlet weak var chartView: LineChartView!
@@ -57,11 +58,12 @@ class AnalyticalHedderView: UIView {
     
     func setupFontforLabel(){
         greetingLBL.setFigFontReqular(size: 16)
-        usernameLBL.setFigFontReqular(size: 24)
+        usernameLBL.setFigFontSemiBold(size: 24)
         chartDateLBL.setFigFontReqular(size: 9)
         overViewLBL.setFigFontReqular(size: 16)
-        recentBrnLblBL.setFigFontReqular(size: 16)
-        topclickBTNLBL.setFigFontReqular(size: 16)
+        recentBrnLblBL.setFigFontSemiBold(size: 16)
+        topclickBTNLBL.setFigFontSemiBold(size: 16)
+        viewAllAnalyticLBL.setFigFontSemiBold(size: 16)
         greetingLBL.text = Utils.getLocalTimeGreeting()
         usernameLBL.text = Constants.UserCosntants.name
     }

@@ -58,7 +58,7 @@ class LinksViewController: UIViewController,YSTabBarCoorinator {
         headerView.delegate = self
     }
     func setupLabeFont(){
-        screenTitleLBL.setFigFontReqular(size: 24)
+        screenTitleLBL.setFigFontSemiBold(size: 24)
     }
     func confirmLinkviewProtocol(){
         linksViewModel.linkViewDelegate = self

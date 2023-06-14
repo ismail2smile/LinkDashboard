@@ -27,9 +27,9 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khb-17-dEQ">
-                            <rect key="frame" x="16" y="57" width="200" height="25"/>
+                            <rect key="frame" x="16" y="57" width="250" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="Tqn-ve-lE6"/>
+                                <constraint firstAttribute="height" constant="30" id="Tqn-ve-lE6"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
@@ -43,7 +43,7 @@
                         <constraint firstAttribute="trailing" secondItem="G6U-dF-BAd" secondAttribute="trailing" constant="177" id="84L-v6-ryt"/>
                         <constraint firstItem="khb-17-dEQ" firstAttribute="top" secondItem="G6U-dF-BAd" secondAttribute="bottom" constant="6" id="oIk-jQ-Oya"/>
                         <constraint firstItem="G6U-dF-BAd" firstAttribute="top" secondItem="mu6-bL-AeC" secondAttribute="top" constant="30" id="q32-Je-bwo"/>
-                        <constraint firstAttribute="trailing" secondItem="khb-17-dEQ" secondAttribute="trailing" constant="177" id="rmi-es-xxn"/>
+                        <constraint firstAttribute="trailing" secondItem="khb-17-dEQ" secondAttribute="trailing" constant="127" id="rmi-es-xxn"/>
                         <constraint firstItem="khb-17-dEQ" firstAttribute="leading" secondItem="mu6-bL-AeC" secondAttribute="leading" constant="16" id="z1B-UI-zXZ"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
@@ -134,7 +134,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zwY-ua-cRP">
-                    <rect key="frame" x="12" y="445" width="381" height="128"/>
+                    <rect key="frame" x="12" y="445" width="377" height="128"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="JEW-JM-YGG"/>
@@ -352,7 +352,7 @@
                 <constraint firstItem="hg4-it-KTC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="qiC-fp-6DP"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hg4-it-KTC" secondAttribute="bottom" constant="11" id="vBO-BP-rjv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pti-Qa-D85" secondAttribute="trailing" constant="12" id="ydy-6a-bkT"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zwY-ua-cRP" secondAttribute="trailing" id="yxi-5w-hMn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zwY-ua-cRP" secondAttribute="trailing" constant="4" id="yxi-5w-hMn"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
@@ -376,6 +376,7 @@
                 <outlet property="topLinkBtn" destination="4FO-jV-crT" id="qqa-Sl-nco"/>
                 <outlet property="topclickBTNLBL" destination="bH4-HC-MsI" id="pu6-aa-62N"/>
                 <outlet property="usernameLBL" destination="khb-17-dEQ" id="eTX-Vi-gWq"/>
+                <outlet property="viewAllAnalyticLBL" destination="ctR-nn-8Tc" id="Xy9-pp-ca7"/>
             </connections>
             <point key="canvasLocation" x="-840.45801526717548" y="-261.61971830985919"/>
         </view>

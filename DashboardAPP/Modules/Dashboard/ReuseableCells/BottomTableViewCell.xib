@@ -38,7 +38,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View All Links" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zms-gh-oKN">
-                                        <rect key="frame" x="133" y="17" width="126" height="21"/>
+                                        <rect key="frame" x="133" y="20" width="126" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="6MN-4Z-LEY"/>
                                             <constraint firstAttribute="width" constant="126" id="iWT-WH-Zaz"/>
@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="height" constant="60" id="dFw-Zb-ALf"/>
                                     <constraint firstItem="HXi-Ec-VLj" firstAttribute="top" secondItem="1dC-g9-Lu3" secondAttribute="top" constant="17" id="daT-QZ-AiL"/>
                                     <constraint firstAttribute="trailing" secondItem="zms-gh-oKN" secondAttribute="trailing" constant="29" id="jJu-T6-hhp"/>
-                                    <constraint firstItem="zms-gh-oKN" firstAttribute="top" secondItem="HXi-Ec-VLj" secondAttribute="top" id="tNV-ZL-LpV"/>
+                                    <constraint firstItem="zms-gh-oKN" firstAttribute="top" secondItem="HXi-Ec-VLj" secondAttribute="top" constant="3" id="tNV-ZL-LpV"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

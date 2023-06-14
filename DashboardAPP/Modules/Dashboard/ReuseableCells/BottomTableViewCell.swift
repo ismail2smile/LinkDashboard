@@ -24,9 +24,9 @@ class BottomTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func setupFontforLabel(){
-        viewAllLinkLBL.setFigFontReqular(size: 16)
-        whatsappLbl.setFigFontReqular(size: 16)
-        questionLBL.setFigFontReqular(size: 16)
+        viewAllLinkLBL.setFigFontSemiBold(size: 16)
+        whatsappLbl.setFigFontSemiBold(size: 16)
+        questionLBL.setFigFontSemiBold(size: 16)
     }
     
 }

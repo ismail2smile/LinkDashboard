@@ -19,7 +19,7 @@ class MetricCollectionViewCell: UICollectionViewCell {
         setupFontforLabel()
     }
     func setupFontforLabel(){
-        titleLBL.setFigFontReqular(size: 16)
+        titleLBL.setFigFontSemiBold(size: 16)
         descLBL.setFigFontReqular(size: 14)
     }
     func setDatatoCell(itemObj: FlowAnalytic?){

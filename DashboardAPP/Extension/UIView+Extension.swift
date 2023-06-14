@@ -131,6 +131,9 @@ extension UILabel{
     func setFigFontReqular(size: CGFloat){
         self.font = UIFont(name: "Figtree-Regular", size: size)
     }
+    func setFigFontSemiBold(size: CGFloat){
+        self.font = UIFont(name: "Figtree-SemiBold", size: size)
+    }
 }
 
 
