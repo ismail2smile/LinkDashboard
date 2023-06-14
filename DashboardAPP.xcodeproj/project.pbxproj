@@ -179,12 +179,11 @@
 				430691282A385C25001E4D5B /* APIManager */,
 				43D77E682A388B4A0033B025 /* Common */,
 				439A9B422A38A3E500829A78 /* Extension */,
+				43C0EDB62A39918D0040B99E /* External */,
 				430690E92A3852A6001E4D5B /* Main.storyboard */,
 				430690EC2A3852A8001E4D5B /* Assets.xcassets */,
 				430690EE2A3852A8001E4D5B /* LaunchScreen.storyboard */,
 				430690F12A3852A8001E4D5B /* Info.plist */,
-				439A9B452A38A4B800829A78 /* Fonts */,
-				43C0EDB62A39918D0040B99E /* External */,
 			);
 			path = DashboardAPP;
 			sourceTree = "<group>";
@@ -328,12 +327,21 @@
 		43C0EDB62A39918D0040B99E /* External */ = {
 			isa = PBXGroup;
 			children = (
+				439A9B452A38A4B800829A78 /* Fonts */,
+				43C0EDBF2A399CAA0040B99E /* YStabbar */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		43C0EDBF2A399CAA0040B99E /* YStabbar */ = {
+			isa = PBXGroup;
+			children = (
 				43C0EDB92A3991AE0040B99E /* YSTabBar.swift */,
 				43C0EDB82A3991AE0040B99E /* YSTabBarItemView.swift */,
 				43C0EDBA2A3991AE0040B99E /* YSTabBarView.swift */,
 				43C0EDB72A3991AE0040B99E /* YSViewStyle.swift */,
 			);
-			path = External;
+			path = YStabbar;
 			sourceTree = "<group>";
 		};
 		43D77E682A388B4A0033B025 /* Common */ = {
