@@ -1,24 +1,246 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarViewController" id="BYZ-38-t0r" customClass="TabBarViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2" y="4"/>
+        </scene>
+        <!--Links View Controller-->
+        <scene sceneID="Z9W-3a-jhN">
+            <objects>
+                <viewController storyboardIdentifier="LinksViewController" id="k54-ms-hC6" customClass="LinksViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTd-eV-X3R">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="oEo-AQ-Viv">
+                                <rect key="frame" x="186.66666666666666" y="399" width="20" height="2"/>
+                                <color key="color" red="0.054901960780000002" green="0.43529411759999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" misplaced="YES" text="Loading Data...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTb-FL-TOu">
+                                <rect key="frame" x="128.33333333333331" y="422" width="136.33333333333331" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0N-E6-RgK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTB-n5-ndI" userLabel="NavView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="154"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQT-ld-6PZ" userLabel="Dashboard">
+                                                <rect key="frame" x="16" y="63" width="263" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="89u-Hh-g8w"/>
+                                                    <constraint firstAttribute="width" constant="263" id="aPE-1b-vX9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wY4-Mv-zvN">
+                                                <rect key="frame" x="337" y="63" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9Q7-R9-cTw"/>
+                                                    <constraint firstAttribute="width" constant="40" id="pbs-kU-cPl"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="dashboardButton"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.062745098040000002" green="0.32549019610000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="wY4-Mv-zvN" firstAttribute="top" secondItem="dTB-n5-ndI" secondAttribute="top" constant="63" id="3j3-Vx-fo4"/>
+                                            <constraint firstItem="uQT-ld-6PZ" firstAttribute="top" secondItem="dTB-n5-ndI" secondAttribute="top" constant="63" id="MSV-H2-HNL"/>
+                                            <constraint firstItem="uQT-ld-6PZ" firstAttribute="leading" secondItem="dTB-n5-ndI" secondAttribute="leading" constant="16" id="iDV-FR-rLq"/>
+                                            <constraint firstAttribute="trailing" secondItem="wY4-Mv-zvN" secondAttribute="trailing" constant="16" id="n0w-h1-yfO"/>
+                                            <constraint firstAttribute="height" constant="154" id="qIl-fj-tqt"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="04E-zf-yrY" userLabel="linksTableViw">
+                                        <rect key="frame" x="0.0" y="120" width="393" height="641"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dTB-n5-ndI" firstAttribute="leading" secondItem="P0N-E6-RgK" secondAttribute="leading" id="1SR-0g-iv1"/>
+                                    <constraint firstItem="dTB-n5-ndI" firstAttribute="top" secondItem="P0N-E6-RgK" secondAttribute="top" id="1cD-X3-UNu"/>
+                                    <constraint firstAttribute="trailing" secondItem="04E-zf-yrY" secondAttribute="trailing" id="1p4-JQ-p9P"/>
+                                    <constraint firstItem="04E-zf-yrY" firstAttribute="top" secondItem="P0N-E6-RgK" secondAttribute="top" constant="120" id="BS0-e6-G49"/>
+                                    <constraint firstAttribute="bottom" secondItem="04E-zf-yrY" secondAttribute="bottom" constant="91" id="JCE-MP-x0H"/>
+                                    <constraint firstItem="04E-zf-yrY" firstAttribute="leading" secondItem="P0N-E6-RgK" secondAttribute="leading" id="SbE-1i-M5u"/>
+                                    <constraint firstAttribute="trailing" secondItem="dTB-n5-ndI" secondAttribute="trailing" id="hWC-sg-N4h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aAT-MB-nCo"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="aAT-MB-nCo" firstAttribute="trailing" secondItem="P0N-E6-RgK" secondAttribute="trailing" id="EUT-Ru-qap"/>
+                            <constraint firstItem="oEo-AQ-Viv" firstAttribute="centerY" secondItem="eTb-FL-TOu" secondAttribute="centerY" constant="-35" id="IHE-Xt-Gax"/>
+                            <constraint firstItem="eTb-FL-TOu" firstAttribute="centerX" secondItem="MTd-eV-X3R" secondAttribute="centerX" id="NxI-vq-RWr"/>
+                            <constraint firstItem="oEo-AQ-Viv" firstAttribute="centerX" secondItem="eTb-FL-TOu" secondAttribute="centerX" id="OPE-eW-s5y"/>
+                            <constraint firstItem="eTb-FL-TOu" firstAttribute="top" secondItem="oEo-AQ-Viv" secondAttribute="bottom" constant="22" id="aE7-q9-mSW"/>
+                            <constraint firstItem="eTb-FL-TOu" firstAttribute="centerY" secondItem="MTd-eV-X3R" secondAttribute="centerY" constant="9" id="fPv-yJ-ZEO"/>
+                            <constraint firstItem="P0N-E6-RgK" firstAttribute="bottom" secondItem="aAT-MB-nCo" secondAttribute="bottom" constant="34" id="qBZ-IN-H3r"/>
+                            <constraint firstItem="aAT-MB-nCo" firstAttribute="top" secondItem="P0N-E6-RgK" secondAttribute="top" constant="59" id="x0i-wt-dDd"/>
+                            <constraint firstItem="P0N-E6-RgK" firstAttribute="leading" secondItem="aAT-MB-nCo" secondAttribute="leading" id="x2q-Rr-Fd3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="linksTableView" destination="04E-zf-yrY" id="VG2-yo-1Bv"/>
+                        <outlet property="mainContentView" destination="P0N-E6-RgK" id="s1d-KZ-h2s"/>
+                        <outlet property="screenTitleLBL" destination="uQT-ld-6PZ" id="171-nW-ESf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEW-U3-x9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-861.83206106870227" y="-1611.9718309859156"/>
+        </scene>
+        <!--Courses View Controller-->
+        <scene sceneID="ub1-2l-GGO">
+            <objects>
+                <viewController storyboardIdentifier="CoursesViewController" id="4Qi-JL-KtX" customClass="CoursesViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAS-DA-L1n">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Courses under development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEz-yi-Z53">
+                                <rect key="frame" x="88.666666666666686" y="415.66666666666669" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d2N-gY-DAq"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="iEz-yi-Z53" firstAttribute="centerX" secondItem="GAS-DA-L1n" secondAttribute="centerX" id="gvC-0p-jm6"/>
+                            <constraint firstItem="iEz-yi-Z53" firstAttribute="centerY" secondItem="GAS-DA-L1n" secondAttribute="centerY" id="smw-55-3U1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujv-AU-YxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312.21374045801525" y="-673.23943661971839"/>
+        </scene>
+        <!--Add Link View Controller-->
+        <scene sceneID="eeh-vZ-zLg">
+            <objects>
+                <viewController storyboardIdentifier="AddLinkViewController" id="Kp1-yQ-MVj" customClass="AddLinkViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUu-wN-ofe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding links under development" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPG-fI-fvd">
+                                <rect key="frame" x="74" y="415.66666666666669" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Qd-fA-y2a"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="IPG-fI-fvd" firstAttribute="centerX" secondItem="iUu-wN-ofe" secondAttribute="centerX" id="2gk-X6-saU"/>
+                            <constraint firstItem="IPG-fI-fvd" firstAttribute="centerY" secondItem="iUu-wN-ofe" secondAttribute="centerY" id="vcw-Le-Dt4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RR8-bP-99Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312.21374045801525" y="-673.23943661971839"/>
+        </scene>
+        <!--Campaigns View Controller-->
+        <scene sceneID="G98-96-Wz1">
+            <objects>
+                <viewController storyboardIdentifier="CampaignsViewController" id="cmP-Wv-3uf" customClass="CampaignsViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kP3-Lu-sgB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campaigns under development..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvd-Xb-4wq">
+                                <rect key="frame" x="70.666666666666686" y="415.66666666666669" width="252" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5qP-nO-KQw"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="nvd-Xb-4wq" firstAttribute="centerX" secondItem="kP3-Lu-sgB" secondAttribute="centerX" id="Hvu-pZ-S6N"/>
+                            <constraint firstItem="nvd-Xb-4wq" firstAttribute="centerY" secondItem="kP3-Lu-sgB" secondAttribute="centerY" id="cfc-Hv-fol"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yl-Vg-ys5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158.01526717557252" y="-599.29577464788736"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="akF-6E-5s7">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="jDi-N2-4uG" customClass="ProfileViewController" customModule="DashboardAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZI-D3-Zo0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile under development..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9H-QO-LdH">
+                                <rect key="frame" x="89" y="415.66666666666669" width="215" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dK9-2n-dpF"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="j9H-QO-LdH" firstAttribute="centerY" secondItem="IZI-D3-Zo0" secondAttribute="centerY" id="aPC-c7-wzC"/>
+                            <constraint firstItem="j9H-QO-LdH" firstAttribute="centerX" secondItem="IZI-D3-Zo0" secondAttribute="centerX" id="swb-5K-jId"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ug-zr-IAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-947.32824427480909" y="-683.80281690140851"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dashboardButton" width="40" height="40"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C9E2CD24-B9C7-4296-AFEA-9ECBD492FFA4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "439FF223-3984-40F6-A0DE-C99DF961E6C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DashboardAPP/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchDashboardData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "439FF223-3984-40F6-A0DE-C99DF961E6C8 - 96f85f742ed2d263"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DashboardAPP.APIManager.fetchDashboardData(completion: (Swift.Result&lt;DashboardAPP.DashboardResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DashboardAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spurge/Documents/OLD/iOS_Practices/ApiBoard/DashboardAPP/DashboardAPP/APIManager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "342">
+               </Location>
+               <Location
+                  uuid = "439FF223-3984-40F6-A0DE-C99DF961E6C8 - 96f85f742ed2d263"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DashboardAPP.APIManager.fetchDashboardData(completion: (Swift.Result&lt;DashboardAPP.DashboardResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DashboardAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spurge/Documents/OLD/iOS_Practices/ApiBoard/DashboardAPP/DashboardAPP/APIManager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9C9BC2F-FCE4-4AF3-9075-A8B4A53216C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DashboardAPP/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchDashboardData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FDAA588-5671-4A47-8098-C2B2AD730493"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DashboardAPP/APIManager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchDashboardData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E60AB02-BB0D-48A8-93AD-73DCF1FDA416"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DashboardAPP/Modules/Dashboard/ViewModel/DashboardViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchDashboard()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8E60AB02-BB0D-48A8-93AD-73DCF1FDA416 - e1e1db6822cd0889"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DashboardAPP.DashboardViewModel.fetchDashboard() -&gt; ()"
+                  moduleName = "DashboardAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spurge/Documents/OLD/iOS_Practices/ApiBoard/DashboardAPP/DashboardAPP/Modules/Dashboard/ViewModel/DashboardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "8E60AB02-BB0D-48A8-93AD-73DCF1FDA416 - 925cc39e0345903f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;DashboardAPP.DashboardResponse, Swift.Error&gt;) -&gt; () in DashboardAPP.DashboardViewModel.fetchDashboard() -&gt; ()"
+                  moduleName = "DashboardAPP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spurge/Documents/OLD/iOS_Practices/ApiBoard/DashboardAPP/DashboardAPP/Modules/Dashboard/ViewModel/DashboardViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "169">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "732BC246-F9EF-4CCA-9217-CD569634A12F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DashboardAPP/Modules/Dashboard/ViewModel/DashboardViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchDashboard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
