@@ -16,17 +16,15 @@ protocol APIRepository {
     // Define other methods for different API endpoints and actions
 }
 class APIManager {
-    static let shared = APIManager() // Singleton instance
-//    init() {}
+    static let shared = APIManager()
     
        private let token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjU5MjcsImlhdCI6MTY3NDU1MDQ1MH0.dCkW0ox8tbjJA2GgUx2UEwNlbTZ7Rr38PVFJevYcXFI"
        
        func fetchDashboardData(completion: @escaping (Result<DashboardResponse, Error>) -> Void) {
-           guard let url = URL(string: Constants.URLConstants.dashboard) else {
+           guard let url = URL(string:Constants.URLConstants.baseUrl + Constants.URLConstants.dashboard) else {
                completion(.failure(APIError.invalidURL))
                return
            }
-           print("url",url,"+++++")
            var request = URLRequest(url: url)
            request.httpMethod = "GET"
            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -47,12 +45,6 @@ class APIManager {
                do {
                    let response = try JSONDecoder().decode(DashboardResponse.self, from: data)
                    completion(.success(response))
-//                   let decoder = JSONDecoder()
-//                   decoder.dateDecodingStrategy = .iso8601
-//                   let dashboardResponse = try decoder.decode(DashboardResponse.self, from: data)
-//                   print("dashboardResponse",dashboardResponse.data)
-//                   let dashboardViewModel = try DashboardResponse(from: dashboardResponse as! Decoder)
-//                   completion(.success(dashboardViewModel))
                } catch {
                    print("errorr---",error.localizedDescription)
                    completion(.failure(error))

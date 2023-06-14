@@ -38,7 +38,6 @@ class AnalyticalHedderView: UIView {
        }
        
        override func layoutSubviews() {
-           print("Cekkk")
        }
     
     @IBAction func topLinkAction(sender:UIButton?){
@@ -64,7 +63,7 @@ class AnalyticalHedderView: UIView {
         recentBrnLblBL.setFigFontReqular(size: 16)
         topclickBTNLBL.setFigFontReqular(size: 16)
         greetingLBL.text = Utils.getLocalTimeGreeting()
-        usernameLBL.text = "Ajay Manav"
+        usernameLBL.text = Constants.UserCosntants.name
     }
     
     func setupCollectionView(){
@@ -174,6 +173,4 @@ extension AnalyticalHedderView: UICollectionViewDelegate, UICollectionViewDataSo
 }
 
 extension AnalyticalHedderView:ChartViewDelegate{
-    
-    
 }

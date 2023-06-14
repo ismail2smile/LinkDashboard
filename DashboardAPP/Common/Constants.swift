@@ -20,8 +20,11 @@ struct Constants {
         static let host = "https://api.inopenapp.com/api/"
         static let v1 = "v1"
         static let baseUrl = host + v1
-        static let dashboard = "https://api.inopenapp.com/api/v1/dashboardNew"
-//        "/dashboardNew"  // endpoint
+        static let dashboard = "/dashboardNew"  // endpoint
     }
+    
+    struct UserCosntants {
+        static let name = "Ajay Manav"
+    }
+    
 }
-//https://api.inopenapp.com/api/v1/dashboardNew

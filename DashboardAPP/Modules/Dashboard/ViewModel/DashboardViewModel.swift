@@ -32,8 +32,6 @@ final class DashboardViewModel:DashboardViewModelProtocol {
             switch result {
             case .success(let response):
                 self.dashboardData = response
-                print("Received data here*****")
-                print("self.linkViewDelegate",self.linkViewDelegate)
                 self.linkViewDelegate?.apiSuccess()
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")

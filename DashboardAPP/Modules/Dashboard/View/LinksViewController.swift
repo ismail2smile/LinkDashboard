@@ -67,15 +67,6 @@ class LinksViewController: UIViewController,YSTabBarCoorinator {
         linksViewModel.fetchDashboard()
     }
  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 extension LinksViewController: LinkViewControllerDelegate{
@@ -90,7 +81,6 @@ extension LinksViewController: LinkViewControllerDelegate{
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            // Code to be executed after the delay
             self.mainContentView.isHidden = false
         }
         
@@ -166,9 +156,6 @@ extension LinksViewController: UITableViewDataSource{
         
         return 231
     }
-
-
-
 }
 
 extension LinksViewController: UITableViewDelegate{
